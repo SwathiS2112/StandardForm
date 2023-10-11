@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <style>
+        
+        #one:hover{
+            background-color: aquamarine;
+        }
+        legend{
+            font-size: 40px;
+            font-weight: 400px;
+            font-family: fantasy;
+
+
+        }
+        fieldset{
+            background-color: rgb(167, 228, 106);
+            border-radius: 30px;
+            width:400px;
+            justify-content: center;
+            border: 5px solid blueviolet;
+        }
+        label{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        form{
+            margin-left: 550px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+        
+        <form action="subform1.html" >
+            <fieldset>
+                <legend>Personal Details</legend>
+            <label for="fname">First Name</label>
+            <input type="text" required  id="fname" name="fname">
+            
+            <br>
+
+            <br>
+            <label for="mname">Middle Name</label>
+            <input type="text"  id="mname" name="mname">
+            <br>
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" required  id="lname" name="lname">
+            <br>
+            <br>
+            <label for="dob">DOB</label>
+            <input type="date"  id="dob" name="dob">
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <br><br>
+            
+        
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Educational Details</legend>
+
+            <label for="">Department</label>
+            <br><br>
+            <input type="radio" id="cs" name="dept">
+            <label for="cs">CS</label>
+            
+            <input type="radio" id="ec" name="dept">
+            <label for="ec">EC</label>
+
+            <input type="radio" id="civil" name="dept">
+            <label for="civil">Civil</label>
+            <br><br>
+
+            <label for="yog">YOP</label>
+            <input list="yop" id="yog" name="yog">
+            
+            <datalist id="yop">
+                <option >2018</option>
+                <option >2019</option>
+                <option >2020</option>
+                <option >2021</option>
+                <option >2022</option>
+                <option >2023</option>
+            </datalist>
+            <br><br>
+            <label for="">Skills</label>
+            <br><br>
+            <input type="checkbox" id="html" name="skill">
+            <label for="html">HTML</label>
+            <br><br>
+            <input type="checkbox" id="css" name="skill">
+            <label for="css">CSS</label>
+            <br><br>
+            <input type="checkbox" id="js" name="skill">
+            <label for="js">JAVASCRIPT</label>
+            
+        </fieldset>
+        <br>
+        <input type="submit" style="background-color: rgb(232, 121, 206); margin-left: 150px;" id="one">
+        
+
+        </form>
+    
+</body>
+</html>
